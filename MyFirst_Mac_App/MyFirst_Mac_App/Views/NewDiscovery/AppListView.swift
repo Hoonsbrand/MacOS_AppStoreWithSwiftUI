@@ -7,7 +7,10 @@
 
 import SwiftUI
 
+// MARK: - AppListView
 struct AppListView: View {
+    
+    // MARK: - Properties
     let appItems: [[AppItemModel]] = [
         [AppItemModel(imageName: "Civilization", appName: "Civilization® VI", appDescription: "건설. 정복. 고취.", isFree: false, isPurchaseInApp: true, price: "₩88,000"),
         AppItemModel(imageName: "Infuse", appName: "Infuse - 비디오 플레이어", appDescription: "비디오 구성 및 재생", isFree: true, isPurchaseInApp: true),
@@ -20,6 +23,7 @@ struct AppListView: View {
         AppItemModel(imageName: "Ulysses", appName: "Ulysses | 글쓰기 앱", appDescription: "궁극의 글쓰기 앱", isFree: true, isPurchaseInApp: true)]
     ]
     
+    // MARK: - MainView
     var body: some View {
         HStack(spacing: 20) {
             ForEach(0..<3) { index in
@@ -34,6 +38,7 @@ struct AppListView: View {
     }
 }
 
+// MARK: - Preview
 struct AppListView_Previews: PreviewProvider {
     static var previews: some View {
         AppListView()

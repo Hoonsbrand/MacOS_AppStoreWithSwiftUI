@@ -19,6 +19,7 @@ struct NewDiscoveryView: View {
         StackNavigationView(currentSubview: $currentSubview, showingSubview: $showingSubview) {
             ScrollView {
                 VStack(alignment: .leading) {
+                    
                     // 헤더
                     Button {
                         showSubview(view: AnyView(HeaderSubView()))
@@ -29,6 +30,19 @@ struct NewDiscoveryView: View {
                             .cornerRadius(10)
                     }
                     .buttonStyle(BorderlessButtonStyle())
+                    
+                    //                    ZStack {
+                    //                        Image("header")
+                    //                            .resizable()
+                    //                            .aspectRatio(contentMode: .fit)
+                    //                            .cornerRadius(10)
+                    //
+                    //                        NavigationLink(destination: HeaderSubView()) {
+                    //                            Rectangle()
+                    //                                .fill(.clear)
+                    //                        }
+                    //                        .buttonStyle(BorderlessButtonStyle())
+                    //                    }
                     
                     
                     // 에디터 추천 앱
@@ -45,9 +59,11 @@ struct NewDiscoveryView: View {
                 .padding(.horizontal)
                 
             } // ScrollView
-        }
+            
+        } // StackNavigationView
         .navigationTitle("새로운 발견")
     }
+    
     
     // MARK: - SubViews
     var recommendedApps: some View {

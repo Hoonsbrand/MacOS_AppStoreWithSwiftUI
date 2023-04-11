@@ -5,6 +5,10 @@
 //  Created by hoonsbrand on 2023/04/10.
 //
 
+/*
+ https://betterprogramming.pub/stack-navigation-on-macos-41a40d8ec3a4
+ */
+
 import SwiftUI
 
 struct StackNavigationView<RootContent>: View where RootContent: View {

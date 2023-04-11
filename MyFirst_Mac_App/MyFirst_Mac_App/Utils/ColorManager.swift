@@ -8,8 +8,5 @@
 import SwiftUI
 
 struct ColorManager {
-    // create static variables for custom colors
     static let newDiscoveryColor = Color("NewDiscoveryColor")
-
-    //... add the rest of your colors here
 }

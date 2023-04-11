@@ -7,8 +7,10 @@
 
 import SwiftUI
 
+// MARK: - EditorsPickView
 struct EditorsPickView: View {
     
+    // MARK: - Properties
     // 1부터 6까지를 순회하며 app1, app2..와 같은 이미지를 쉽게 불러온다.
     let appImages = Array(1...3).map { "app\($0)" }
     
@@ -18,6 +20,7 @@ struct EditorsPickView: View {
         EditorsPickModel(categoryName: "시작하기", title: "탁월한 Safari 확장 프로그램", text: "브라우저를 더 강력하게 만드는 앱을 만나보세요.", imageName: "app3")
     ]
     
+    // MARK: - MainView
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 10) {
@@ -29,6 +32,7 @@ struct EditorsPickView: View {
     }
 }
 
+// MARK: - Preview
 struct NewDiscoveryScrollView_Previews: PreviewProvider {
     static var previews: some View {
         EditorsPickView()

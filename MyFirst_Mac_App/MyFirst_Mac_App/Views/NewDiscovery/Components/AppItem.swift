@@ -7,7 +7,10 @@
 
 import SwiftUI
 
+// MARK: - AppItem
 struct AppItem: View {
+    
+    // MARK: - Properties
     @State var imageName: String
     @State var appName: String
     @State var appDescription: String
@@ -17,6 +20,7 @@ struct AppItem: View {
     @State var price: String = ""
     @State var isDividerNeeded: Bool = true
     
+    // MARK: - MainView
     var body: some View {
         
         HStack {
@@ -71,13 +75,12 @@ struct AppItem: View {
             } // VStack
             
         } // HStack
-        .frame(height: 50)
-        
-        
+        .frame(height: 70)
         
     }
 }
 
+// MARK: - Preview
 struct AppItem_Previews: PreviewProvider {
     static var previews: some View {
         AppItem(imageName: "app1", appName: "CapCut - Vlog 동영상 편집 어플", appDescription: "음악, 필터, 스티커, 이모지, 회전, 자르기", isForIpad: true, isFree: true, isPurchaseInApp: true, price: "₩88,000")

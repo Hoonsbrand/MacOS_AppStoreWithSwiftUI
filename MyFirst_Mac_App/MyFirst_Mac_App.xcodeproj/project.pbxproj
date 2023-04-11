@@ -11,6 +11,7 @@
 		720779C629E27C7000C3A7DC /* AppItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720779C529E27C7000C3A7DC /* AppItemModel.swift */; };
 		72390A7529E415CA002EF1F4 /* StackNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72390A7429E415CA002EF1F4 /* StackNavigationView.swift */; };
 		72390A7829E418B7002EF1F4 /* HeaderSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72390A7729E418B7002EF1F4 /* HeaderSubView.swift */; };
+		72390A7A29E4262C002EF1F4 /* HeaderSubViewAppDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72390A7929E4262C002EF1F4 /* HeaderSubViewAppDetailView.swift */; };
 		724B21B929E165AC0040DB99 /* MyFirst_Mac_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724B21B829E165AC0040DB99 /* MyFirst_Mac_AppApp.swift */; };
 		724B21BB29E165AC0040DB99 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724B21BA29E165AC0040DB99 /* ContentView.swift */; };
 		724B21BD29E165AD0040DB99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724B21BC29E165AD0040DB99 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		720779C529E27C7000C3A7DC /* AppItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppItemModel.swift; sourceTree = "<group>"; };
 		72390A7429E415CA002EF1F4 /* StackNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackNavigationView.swift; sourceTree = "<group>"; };
 		72390A7729E418B7002EF1F4 /* HeaderSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSubView.swift; sourceTree = "<group>"; };
+		72390A7929E4262C002EF1F4 /* HeaderSubViewAppDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSubViewAppDetailView.swift; sourceTree = "<group>"; };
 		724B21B529E165AC0040DB99 /* MyFirst_Mac_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirst_Mac_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		724B21B829E165AC0040DB99 /* MyFirst_Mac_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirst_Mac_AppApp.swift; sourceTree = "<group>"; };
 		724B21BA29E165AC0040DB99 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -142,15 +144,14 @@
 		724B21B729E165AC0040DB99 /* MyFirst_Mac_App */ = {
 			isa = PBXGroup;
 			children = (
+				724B21CC29E174940040DB99 /* ListItems */,
 				720779C429E27C5C00C3A7DC /* Utils */,
 				720779C129E27C2800C3A7DC /* Model */,
 				724B21E929E197DD0040DB99 /* Views */,
-				724B21BA29E165AC0040DB99 /* ContentView.swift */,
 				724B21B829E165AC0040DB99 /* MyFirst_Mac_AppApp.swift */,
 				724B21BC29E165AD0040DB99 /* Assets.xcassets */,
 				724B21C129E165AD0040DB99 /* MyFirst_Mac_App.entitlements */,
 				724B21BE29E165AD0040DB99 /* Preview Content */,
-				724B21CC29E174940040DB99 /* ListItems */,
 			);
 			path = MyFirst_Mac_App;
 			sourceTree = "<group>";
@@ -183,6 +184,7 @@
 				724B21E429E18F800040DB99 /* EditorsPickItem.swift */,
 				724B21ED29E19B6A0040DB99 /* AppItem.swift */,
 				72A0E74029E3AD4700A4371C /* AppsByThemeItem.swift */,
+				72390A7929E4262C002EF1F4 /* HeaderSubViewAppDetailView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -190,8 +192,9 @@
 		724B21E929E197DD0040DB99 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				720779C229E27C3D00C3A7DC /* MenuList */,
+				724B21BA29E165AC0040DB99 /* ContentView.swift */,
 				720779C029E27C1400C3A7DC /* Introduce */,
+				720779C229E27C3D00C3A7DC /* MenuList */,
 				724B21EA29E197EA0040DB99 /* NewDiscovery */,
 			);
 			path = Views;
@@ -200,9 +203,9 @@
 		724B21EA29E197EA0040DB99 /* NewDiscovery */ = {
 			isa = PBXGroup;
 			children = (
+				724B21C829E171070040DB99 /* NewDiscoveryView.swift */,
 				72390A7629E418A9002EF1F4 /* SubViews */,
 				724B21DF29E188B00040DB99 /* Components */,
-				724B21C829E171070040DB99 /* NewDiscoveryView.swift */,
 				724B21EB29E1981B0040DB99 /* EditorsPickView.swift */,
 				720779BE29E26FE300C3A7DC /* AppListView.swift */,
 				72A0E73E29E3AD3700A4371C /* AppsByThemeView.swift */,
@@ -286,6 +289,7 @@
 				724B21CB29E1712E0040DB99 /* ListView.swift in Sources */,
 				72A0E74529E3B18B00A4371C /* EditorsPickModel.swift in Sources */,
 				72390A7529E415CA002EF1F4 /* StackNavigationView.swift in Sources */,
+				72390A7A29E4262C002EF1F4 /* HeaderSubViewAppDetailView.swift in Sources */,
 				720779C629E27C7000C3A7DC /* AppItemModel.swift in Sources */,
 				720779BF29E26FE300C3A7DC /* AppListView.swift in Sources */,
 				72A0E74129E3AD4700A4371C /* AppsByThemeItem.swift in Sources */,
